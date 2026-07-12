@@ -20,8 +20,9 @@ This repo contains small programs, exercises, and experiments written as I progr
 
 ## Running any program
 
-```bash
+```
 go run main.go
+```
 
 ## The Language Server — gopls
 
