@@ -22,3 +22,16 @@ This repo contains small programs, exercises, and experiments written as I progr
 
 ```bash
 go run main.go
+
+## The Language Server — gopls
+
+When you write Go code in Bob, you're not alone. In the background, a program called gopls (pronounced "go please") is running silently. It's a language server — it reads your code in real time and talks to the editor to provide:
+
+✅ Autocomplete
+✅ Red underlines on errors
+✅ Go to definition (Cmd+Click)
+✅ Auto import/remove of packages
+✅ Hover documentation
+✅ Formatting on save
+
+It's why the editor feels "smart" about Go specifically.
