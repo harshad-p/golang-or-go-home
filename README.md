@@ -28,11 +28,11 @@ go run main.go
 
 When you write Go code in Bob, you're not alone. In the background, a program called gopls (pronounced "go please") is running silently. It's a language server — it reads your code in real time and talks to the editor to provide:
 
-✅ Autocomplete
-✅ Red underlines on errors
-✅ Go to definition (Cmd+Click)
-✅ Auto import/remove of packages
-✅ Hover documentation
-✅ Formatting on save
+✅ Autocomplete  
+✅ Red underlines on errors  
+✅ Go to definition (Cmd+Click)  
+✅ Auto import/remove of packages  
+✅ Hover documentation  
+✅ Formatting on save  
 
 It's why the editor feels "smart" about Go specifically.
