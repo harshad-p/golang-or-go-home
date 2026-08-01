@@ -8,4 +8,9 @@ func main() {
 
 	fmt.Println(name)
 	fmt.Println(age)
+
+	isADeveloper := true
+	position := "(Senior Software Engineer)"
+
+	fmt.Println("Is a Developer?:", isADeveloper, position)
 }
