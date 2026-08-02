@@ -2,12 +2,24 @@ package main
 
 import "fmt"
 
+// Simple function
 func sayHello() {
 	fmt.Println("Hello!")
 }
 
+// Function with parameter
+func sayHelloTo(name string) {
+	fmt.Println("Hello,", name)
+}
+
+// Function with return type
 func add(a int, b int) int {
 	return a + b
+}
+
+// Function with parameter shortening of the same type.
+func multiply(a, b int) int {
+	return a * b
 }
 
 func main() {
@@ -15,6 +27,8 @@ func main() {
 	b := 3
 
 	sayHello()
+	sayHelloTo("Harshad")
 	fmt.Println("Operations on", a, "and", b)
 	fmt.Println("Addition:", add(a, b))
+	fmt.Println("Multiplication:", multiply(a, b))
 }
