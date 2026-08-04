@@ -21,4 +21,14 @@ func main() {
 	for i := 1; i <= 5; i++ {
 		fmt.Println(i)
 	}
+
+	// while loop demo
+	fmt.Println("\nEven numbers between from 1 and 10 (inclusive):")
+	num := 1
+	for num <= 10 {
+		if num%2 == 0 {
+			fmt.Println(num)
+		}
+		num++
+	}
 }
