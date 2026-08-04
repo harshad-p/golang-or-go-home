@@ -15,4 +15,10 @@ func main() {
 	var age2 int = 21
 	fmt.Println("Age =", age1, "=>", adultOrMinor(age1))
 	fmt.Println("Age =", age2, "=>", adultOrMinor(age2))
+
+	// regular for loop demo
+	fmt.Println("\nNumbers from 1 to 5:")
+	for i := 1; i <= 5; i++ {
+		fmt.Println(i)
+	}
 }
