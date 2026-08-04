@@ -31,4 +31,10 @@ func main() {
 		}
 		num++
 	}
+
+	// infinite loop
+	fmt.Print("Running")
+	for {
+		fmt.Print(".")
+	}
 }
