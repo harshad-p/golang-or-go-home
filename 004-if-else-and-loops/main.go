@@ -33,8 +33,8 @@ func main() {
 	}
 
 	// infinite loop
-	fmt.Print("Running")
-	for {
-		fmt.Print(".")
-	}
+	// fmt.Print("Running")
+	// for {
+	// 	fmt.Print(".")
+	// }
 }
