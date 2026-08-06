@@ -3,6 +3,18 @@ package main
 import "fmt"
 
 func main() {
+
+	// ARRAYS
+
+	daysOfWeek := [7]string{}
+
+	daysOfWeek[0] = "Monday"
+
+	fmt.Println("Days of week:")
+	fmt.Println(daysOfWeek)
+
+	// SLICES
+
 	numbers := []int{1, 2, 3, 4, 5}
 
 	// Direct printing of array elements
