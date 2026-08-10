@@ -14,6 +14,14 @@ func (book Book) ToString() {
 	fmt.Println("Pages\t\t:\t", book.Pages)
 }
 
+func (book Book) NotPossibleToResetPages() {
+	book.Pages = 0
+}
+
+func (book *Book) ResetPages() {
+	book.Pages = 0
+}
+
 func main() {
 	harryPotterBook := Book{
 		Title:  "Harry Potter and the Goblet of Fire",
@@ -32,5 +40,15 @@ func main() {
 	fmt.Println(harryPotterBook.Pages)
 
 	// Use connected method to print Book
+	harryPotterBook.ToString()
+
+	// Try to modify pages using instance copy
+	harryPotterBook.NotPossibleToResetPages()
+	fmt.Println("After trying to modify pages using instance copy:")
+	harryPotterBook.ToString()
+
+	// Try to modify pages using pointer
+	harryPotterBook.ResetPages()
+	fmt.Println("After trying to modify pages using pointer:")
 	harryPotterBook.ToString()
 }
