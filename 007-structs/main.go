@@ -22,7 +22,35 @@ func (book *Book) ResetPages() {
 	book.Pages = 0
 }
 
+type Cat struct {
+	Name  string
+	Color string
+}
+
+func (c Cat) speak() {
+	fmt.Println("Meow")
+}
+
+type Dog struct {
+	Name  string
+	Color string
+}
+
+func (d Dog) speak() {
+	fmt.Println("Woof")
+}
+
+type Speaker interface {
+	speak()
+}
+
+func makeSound(s Speaker) {
+	s.speak()
+}
+
 func main() {
+	// STRUCTS
+
 	harryPotterBook := Book{
 		Title:  "Harry Potter and the Goblet of Fire",
 		Author: "J. K. Rowling",
@@ -51,4 +79,18 @@ func main() {
 	harryPotterBook.ResetPages()
 	fmt.Println("After trying to modify pages using pointer:")
 	harryPotterBook.ToString()
+
+	// INTERFACES
+	cat := Cat{
+		Name:  "Destiny",
+		Color: "Orange and White",
+	}
+
+	dog := Dog{
+		Name:  "Max",
+		Color: "Brown",
+	}
+
+	cat.speak()
+	dog.speak()
 }
