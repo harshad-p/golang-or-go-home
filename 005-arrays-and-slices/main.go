@@ -10,6 +10,7 @@ func main() {
 
 	daysOfWeek[0] = "Monday"
 
+	// Direct printing of array elements
 	fmt.Println("Days of week:")
 	fmt.Println(daysOfWeek)
 
@@ -17,7 +18,7 @@ func main() {
 
 	numbers := []int{1, 2, 3, 4, 5}
 
-	// Direct printing of array elements
+	// Direct printing of slice elements
 	fmt.Println("Numbers:")
 	fmt.Println(numbers)
 
