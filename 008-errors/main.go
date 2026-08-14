@@ -4,7 +4,8 @@ import "fmt"
 
 func divide(dividend, divisor float32) (float32, error) {
 	if divisor == 0 {
-		return 0, fmt.Errorf("Cannot divide by 0.")
+		// fmt.Errorf becomes particularly useful when you want to include values
+		return 0, fmt.Errorf("Cannot divide %f by 0.", dividend)
 	}
 
 	return dividend / divisor, nil
